@@ -15,7 +15,7 @@ loaders.push({
 
 // local scss modules
 loaders.push({
-	test: /[\/\\]src[\/\\].*\.less/,
+	test: /[\/\\]src[\/\\]less[\/\\].*\.less/,
 	exclude: /(node_modules|bower_components|public\/)/,
 	loader: ExtractTextPlugin.extract('style', 'css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss!less')
 });
